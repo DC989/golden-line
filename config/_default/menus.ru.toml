@@ -1,0 +1,29 @@
+[[main]]
+  identifier = "airport-transfers"
+  name = "Трансфер из аэропорта"
+  url = "/ru/airport-transfers/"
+  weight = 1
+
+[[main]]
+  identifier = "individual-transfers"
+  name = "Индивидуальные трансферы"
+  url = "/ru/individual-transfers/"
+  weight = 2
+
+[[main]]
+  identifier = "group-transfers"
+  name = "Групповые трансферы"
+  url = "/ru/group-transfers/"
+  weight = 3
+
+[[main]]
+  identifier = "about"
+  name = "О нас"
+  url = "/ru/about/"
+  weight = 4
+
+[[main]]
+  identifier = "contact"
+  name = "Контакты"
+  url = "/ru/contact/"
+  weight = 5

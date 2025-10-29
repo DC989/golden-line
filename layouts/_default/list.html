@@ -1,0 +1,42 @@
+{{ define "main" }}
+<article>
+    <header>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}
+            <p class="description">{{ . }}</p>
+        {{ end }}
+    </header>
+
+    <div class="content">
+        {{ .Content }}
+    </div>
+
+    <!-- List all pages in this section -->
+    {{ if .Pages }}
+        <section class="page-list">
+            {{ range .Pages }}
+                <article class="summary">
+                    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                    
+                    {{ if .Date }}
+                        <time datetime="{{ .Date.Format "2006-01-02" }}">
+                            {{ .Date.Format "January 2, 2006" }}
+                        </time>
+                    {{ end }}
+
+                    {{ with .Description }}
+                        <p>{{ . }}</p>
+                    {{ else }}
+                        <p>{{ .Summary }}</p>
+                    {{ end }}
+
+                    <a href="{{ .Permalink }}">{{ i18n "readMore" }}</a>
+                </article>
+            {{ end }}
+        </section>
+    {{ end }}
+
+    <!-- Pagination -->
+    {{ template "_internal/pagination.html" . }}
+</article>
+{{ end }}

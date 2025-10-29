@@ -1,0 +1,25 @@
+baseURL = "http://localhost:1313/"
+defaultContentLanguage = 'en'
+languageCode = 'en'
+title = 'Golden Line'
+
+# Language configuration
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    weight = 1
+    title = "Golden Line Transfers"
+    [languages.en.params]
+      description = "Premium airport and individual transfer services"
+
+  [languages.ru]
+    languageName = "Русский"
+    languageCode = "ru"
+    weight = 2
+    title = "Golden Line Трансферы"
+    [languages.ru.params]
+      description = "Премиум трансферы из аэропорта и индивидуальные перевозки"
+
+[params]
+  description = "Private, individual, group, and airport transfers"

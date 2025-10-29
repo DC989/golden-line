@@ -1,0 +1,23 @@
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        </div>
+        
+        <!-- Main Navigation -->
+        <nav>
+            <ul>
+                {{ range .Site.Menus.main }}
+                    <li>
+                        <a href="{{ .URL }}" {{ if $.IsMenuCurrent "main" . }}class="active"{{ end }}>
+                            {{ .Name }}
+                        </a>
+                    </li>
+                {{ end }}
+            </ul>
+        </nav>
+
+        <!-- Language Switcher -->
+        {{ partial "language-switcher.html" . }}
+    </div>
+</header>

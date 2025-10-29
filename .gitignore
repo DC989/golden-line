@@ -1,0 +1,30 @@
+# Hugo build output
+public/
+resources/
+.hugo_build.lock
+hugo_stats.json
+assets/jsconfig.json
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Node / JS toolchains (if used for PostCSS/Tailwind/etc.)
+node_modules/
+.cache/
+dist/
+.vite/
+parcel-cache/
+
+# OS / Editor noise
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+*.code-workspace
+
+# Local env files (if any)
+.env
+.env.*

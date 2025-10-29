@@ -1,0 +1,43 @@
+# UI Strings
+- id: readMore
+  translation: "Read more"
+
+- id: home
+  translation: "Home"
+
+- id: allPosts
+  translation: "All Posts"
+
+- id: bookNow
+  translation: "Book Now"
+
+- id: getQuote
+  translation: "Get a Quote"
+
+- id: phoneLabel
+  translation: "Phone"
+
+- id: emailLabel
+  translation: "Email"
+
+- id: selectLanguage
+  translation: "Select Language"
+
+# 404 Page
+- id: pageNotFound
+  translation: "Page Not Found"
+
+- id: pageNotFoundDesc
+  translation: "Sorry, the page you're looking for doesn't exist or has been moved."
+
+- id: whatNow
+  translation: "What Now?"
+
+- id: backHome
+  translation: "Back to Home"
+
+- id: contactSupport
+  translation: "Contact Support"
+
+- id: browseServices
+  translation: "Browse Our Services"

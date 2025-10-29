@@ -1,0 +1,43 @@
+# UI Strings
+- id: readMore
+  translation: "Читать далее"
+
+- id: home
+  translation: "Главная"
+
+- id: allPosts
+  translation: "Все статьи"
+
+- id: bookNow
+  translation: "Забронировать"
+
+- id: getQuote
+  translation: "Получить расчет"
+
+- id: phoneLabel
+  translation: "Телефон"
+
+- id: emailLabel
+  translation: "Электронная почта"
+
+- id: selectLanguage
+  translation: "Выбрать язык"
+
+# 404 Page
+- id: pageNotFound
+  translation: "Страница не найдена"
+
+- id: pageNotFoundDesc
+  translation: "Извините, страница, которую вы ищете, не существует или была перемещена."
+
+- id: whatNow
+  translation: "Что дальше?"
+
+- id: backHome
+  translation: "На главную"
+
+- id: contactSupport
+  translation: "Связаться с поддержкой"
+
+- id: browseServices
+  translation: "Просмотреть наши услуги"

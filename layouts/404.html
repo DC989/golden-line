@@ -1,0 +1,33 @@
+{{ define "main" }}
+<article class="error-page">
+    <div class="error-container">
+        <div class="error-code">404</div>
+
+        <h1>{{ i18n "pageNotFound" }}</h1>
+        <p>{{ i18n "pageNotFoundDesc" }}</p>
+
+        <div class="error-suggestions">
+            <h2>{{ i18n "whatNow" }}</h2>
+            <ul>
+                <li><a href="{{ relLangURL "" }}">{{ i18n "backHome" }}</a></li>
+                <li><a href="{{ relLangURL "contact/" }}">{{ i18n "contactSupport" }}</a></li>
+            </ul>
+        </div>
+
+        <!-- Suggested pages/services -->
+        <div class="suggested-links">
+            <h3>{{ i18n "browseServices" }}</h3>
+            <ul>
+                {{ range first 3 .Site.Menus.main }}
+                    {{ if ne .Identifier "contact" }}
+                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                {{ end }}
+            </ul>
+        </div>
+
+        <!-- Language selector on 404 -->
+        {{ partial "language-switcher.html" . }}
+    </div>
+</article>
+{{ end }}
