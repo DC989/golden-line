@@ -6,6 +6,145 @@
   <a href="/contact/" class="cta-button">{{ i18n "bookNow" }}</a>
 </section>
 
+<div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+  <div class="col d-flex align-items-start">
+    <div
+      class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+    >
+      <svg class="bi" width="1em" height="1em" aria-hidden="true">
+        <use xlink:href="#toggles2"></use>
+      </svg>
+    </div>
+    <div>
+      <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+      <p>
+        Paragraph of text beneath the heading to explain the heading. We'll add
+        onto it with another sentence and probably just keep going until we run
+        out of words.
+      </p>
+      <a href="#" class="btn btn-primary"> Primary button </a>
+    </div>
+  </div>
+  <div class="col d-flex align-items-start">
+    <div
+      class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+    >
+      <svg class="bi" width="1em" height="1em" aria-hidden="true">
+        <use xlink:href="#cpu-fill"></use>
+      </svg>
+    </div>
+    <div>
+      <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+      <p>
+        Paragraph of text beneath the heading to explain the heading. We'll add
+        onto it with another sentence and probably just keep going until we run
+        out of words.
+      </p>
+      <a href="#" class="btn btn-primary"> Primary button </a>
+    </div>
+  </div>
+  <div class="col d-flex align-items-start">
+    <div
+      class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+    >
+      <svg class="bi" width="1em" height="1em" aria-hidden="true">
+        <use xlink:href="#tools"></use>
+      </svg>
+    </div>
+    <div>
+      <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+      <p>
+        Paragraph of text beneath the heading to explain the heading. We'll add
+        onto it with another sentence and probably just keep going until we run
+        out of words.
+      </p>
+      <a href="#" class="btn btn-primary"> Primary button </a>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+
+<div class="card">
+  <div class="card-header">Quote</div>
+  <div class="card-body">
+    <figure>
+      <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">Quote</div>
+  <div class="card-body">
+    <figure>
+      <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">Quote</div>
+  <div class="card-body">
+    <figure>
+      <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+<p class="d-inline-flex gap-1">
+  <a
+    class="btn btn-primary"
+    data-bs-toggle="collapse"
+    href="#collapseExample"
+    role="button"
+    aria-expanded="false"
+    aria-controls="collapseExample"
+  >
+    Link with href
+  </a>
+  <button
+    class="btn btn-primary"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#collapseExample"
+    aria-expanded="false"
+    aria-controls="collapseExample"
+  >
+    Button with data-bs-target
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Some placeholder content for the collapse component. This panel is hidden by
+    default but revealed when the user activates the relevant trigger.
+  </div>
+</div>
+
 <section class="services">
   <h2>{{ .Title }}</h2>
   <p>{{ .Description }}</p>

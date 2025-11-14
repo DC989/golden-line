@@ -19,13 +19,18 @@
       hreflang="{{ .Language.Lang }}"
       href="{{ .Permalink }}"
     />
-    {{ $styles := resources.Get "scss/main.scss" | css.Sass | resources.Minify |
-    resources.Fingerprint }}
+
+    <!-- Bootstrap CSS from node_modules via Hugo Pipes -->
+    {{ with resources.Get "scss/main.scss" }} {{ $css := . | toCSS }} {{ $css =
+    $css | minify }} {{ $css = $css | fingerprint }}
     <link
       rel="stylesheet"
-      href="{{ $styles.RelPermalink }}"
-      integrity="{{ $styles.Data.Integrity }}"
+      href="{{ $css.RelPermalink }}"
+      integrity="{{ $css.Data.Integrity }}"
+      crossorigin="anonymous"
     />
+    {{ end }}
+
     <!-- Prevent 404 page from being indexed -->
     {{ if eq .RelPermalink "/404.html" }}
     <meta name="robots" content="noindex, nofollow" />
@@ -34,11 +39,16 @@
   <body>
     {{ partial "header.html" . }}
     <main>{{ block "main" . }}{{ end }}</main>
-    {{ partial "footer.html" . }} {{ $js := resources.Get
-    "js/bootstrap.bundle.js" | resources.Minify | resources.Fingerprint }}
+    {{ partial "footer.html" . }}
+
+    <!-- Bootstrap JS from node_modules via Hugo Pipes -->
+    {{ with resources.Get "js/bootstrap/bootstrap.bundle.js" }} {{ $js := . |
+    minify }} {{ $js = $js | fingerprint }}
     <script
       src="{{ $js.RelPermalink }}"
       integrity="{{ $js.Data.Integrity }}"
+      crossorigin="anonymous"
     ></script>
+    {{ end }} {{ block "scripts" . }}{{ end }}
   </body>
 </html>

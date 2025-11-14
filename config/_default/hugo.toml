@@ -23,3 +23,29 @@ title = 'Golden Line'
 
 [params]
   description = "Private, individual, group, and airport transfers"
+
+[module]
+  # Mount Bootstrap SCSS from node_modules
+  [[module.mounts]]
+    source = "node_modules/bootstrap/scss"
+    target = "assets/scss/bootstrap"
+
+  # Mount Bootstrap JS from node_modules
+  [[module.mounts]]
+    source = "node_modules/bootstrap/dist/js"
+    target = "assets/js/bootstrap"
+
+  # Mount your own assets directory (IMPORTANT!)
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+
+  # Mount static directory
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+
+  # Mount content directory
+  [[module.mounts]]
+    source = "content"
+    target = "content"
