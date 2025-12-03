@@ -1,9 +1,6 @@
 ---
-title: "About Us"
-description: "Learn about Golden Line Transfers"
-date: 2025-10-28
+title: "O Nama"
+description: "Saznajte više o Golden Line Transferima"
 ---
 
-## About Golden Line Transfers
-
-We are a premium transportation service provider with years of experience.
+Mi smo kompanija posvećena pružanju najboljih usluga transfera.

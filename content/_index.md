@@ -1,6 +1,6 @@
 ---
-title: "Golden Line Transfers"
-description: "Premium airport and private transfer services"
+title: "Golden Line Transferi"
+description: "Premium aerodromski i privatni transferi"
 ---
 
-Welcome to Golden Line Transfers - your reliable partner for comfortable transportation.
+Dobrodošli u Golden Line Transfere - vaš pouzdan partner za udoban prevoz.

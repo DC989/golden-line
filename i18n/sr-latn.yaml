@@ -1,0 +1,43 @@
+# UI Strings
+- id: readMore
+  translation: "Pročitajte više"
+
+- id: home
+  translation: "Početna"
+
+- id: allPosts
+  translation: "Sve objave"
+
+- id: bookNow
+  translation: "Rezervišite sada"
+
+- id: getQuote
+  translation: "Zatražite ponudu"
+
+- id: phoneLabel
+  translation: "Telefon"
+
+- id: emailLabel
+  translation: "Email"
+
+- id: selectLanguage
+  translation: "Izaberite jezik"
+
+# 404 Page
+- id: pageNotFound
+  translation: "Stranica nije pronađena"
+
+- id: pageNotFoundDesc
+  translation: "Žao nam je, stranica koju tražite ne postoji ili je premeštena."
+
+- id: whatNow
+  translation: "Šta sada?"
+
+- id: backHome
+  translation: "Nazad na početnu"
+
+- id: contactSupport
+  translation: "Kontaktirajte podršku"
+
+- id: browseServices
+  translation: "Pregledajte naše usluge"

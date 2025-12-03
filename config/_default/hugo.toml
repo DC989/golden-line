@@ -1,6 +1,6 @@
 baseURL = "http://localhost:1313/"
-defaultContentLanguage = 'en'
-languageCode = 'en'
+defaultContentLanguage = 'sr-latn'
+languageCode = 'sr-latn'
 title = 'Golden Line'
 
 # Language configuration
@@ -8,7 +8,7 @@ title = 'Golden Line'
   [languages.en]
     languageName = "English"
     languageCode = "en"
-    weight = 1
+    weight = 3
     title = "Golden Line Transfers"
     [languages.en.params]
       description = "Premium airport and individual transfer services"
@@ -20,6 +20,14 @@ title = 'Golden Line'
     title = "Golden Line Трансферы"
     [languages.ru.params]
       description = "Премиум трансферы из аэропорта и индивидуальные перевозки"
+
+  [languages.sr-latn]
+    languageName = "Srpski"
+    languageCode = "sr-latn"
+    weight = 1
+    title = "Golden Line Transferi"
+    [languages.sr-latn.params]
+      description = "Premium aerodromski i individualni transferi"
 
 [params]
   description = "Private, individual, group, and airport transfers"

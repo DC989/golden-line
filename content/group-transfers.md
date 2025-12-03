@@ -1,9 +1,6 @@
 ---
-title: "Group Transfers"
-description: "Group transportation services for events and tours"
-date: 2025-10-28
+title: "Grupni Transferi"
+description: "Prevoz za veće grupe"
 ---
 
-## Group Transfer Services
-
-Efficient transportation solutions for groups of all sizes.
+Organizujemo prevoz za veće grupe, poslovne događaje i izlete.

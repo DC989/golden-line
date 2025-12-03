@@ -28,3 +28,7 @@ Thumbs.db
 # Local env files (if any)
 .env
 .env.*
+
+# Custom ignore rules can be added below this line
+reference/
+GEMINI.md

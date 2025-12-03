@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-description: "Latest news and updates"
+description: "Naš blog"
 ---
 
-Read our latest articles about transfer services and travel tips.
+Dobrodošli na naš blog.

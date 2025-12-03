@@ -27,3 +27,9 @@
   name = "Контакты"
   url = "/ru/contact/"
   weight = 5
+
+[[main]]
+  identifier = "blog"
+  name = "Блог"
+  url = "/ru/blog/"
+  weight = 6
