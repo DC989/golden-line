@@ -2,8 +2,8 @@
 title: "Копаоник"
 type: "locations"
 description: "Роскошные трансферы на Копаоник - зимний центр Сербии."
-banner_image: "/images/kopaonik.jpg"
-banner_image_mobile: "/images/kopaonik-mobile.jpg"
+banner_image: "images/kopaonik.jpg"
+banner_image_mobile: "images/kopaonik-mobile.jpg"
 ---
 
 Добро пожаловать на Копаоник.

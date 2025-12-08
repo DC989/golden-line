@@ -2,8 +2,8 @@
 title: "Kopaonik"
 type: "locations"
 description: "Luksuzni prevoz do Kopaonika - zimskog centra Srbije."
-banner_image: "/images/kopaonik.jpg"
-banner_image_mobile: "/images/kopaonik-mobile.jpg"
+banner_image: "images/kopaonik.jpg"
+banner_image_mobile: "images/kopaonik-mobile.jpg"
 ---
 
 Dobrodošli na Kopaonik.

@@ -2,8 +2,8 @@
 title: "Kopaonik"
 type: "locations"
 description: "Luxury transfers to Kopaonik - Serbia's winter center."
-banner_image: "/images/kopaonik.jpg"
-banner_image_mobile: "/images/kopaonik-mobile.jpg"
+banner_image: "images/kopaonik.jpg"
+banner_image_mobile: "images/kopaonik-mobile.jpg"
 ---
 
 Welcome to Kopaonik.
