@@ -9,11 +9,7 @@
     overflow: hidden;
 
     @include breakpoint("md") {
-      height: 56vw;
-    }
-
-    @include breakpoint("xl") {
-      height: 45vw;
+      height: 52vw;
     }
   }
 

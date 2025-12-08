@@ -39,6 +39,7 @@
     {{ end }}
   </head>
   <body>
+    {{ partial "theme-icons.html" . }}
     {{ partial "header.html" . }}
     <main>{{ block "main" . }}{{ end }}</main>
     {{ partial "footer.html" . }}
@@ -51,6 +52,12 @@
       integrity="{{ $js.Data.Integrity }}"
       crossorigin="anonymous"
     ></script>
-    {{ end }} {{ block "scripts" . }}{{ end }}
+    {{ end }}
+    <!-- Theme Switcher Logic -->
+    {{ with resources.Get "js/theme-switcher.js" }}
+      {{ $js := . | minify | fingerprint }}
+      <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+    {{ end }}
+    {{ block "scripts" . }}{{ end }}
   </body>
 </html>

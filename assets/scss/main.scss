@@ -2,3 +2,33 @@
 @import "bootstrap/bootstrap";
 @import "utils/breakpoints";
 @import "splash";
+@import "theme";
+
+// Typography overrides for Navigation and Language Switcher
+.navbar-nav .nav-link,
+.language-switcher,
+.dropdown-item {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+}
+
+// Ensure specific elements inside language switcher inherit these properties
+.language-switcher {
+  font-size: 10px; // Explicit request for 10px size
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  
+  a,
+  span {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    text-decoration: none; // Match nav links usually
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

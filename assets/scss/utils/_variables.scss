@@ -1,5 +1,7 @@
 // Fonts
-$font-family-sans-serif: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif: "Montserrat", system-ui, -apple-system, "Segoe UI",
+  Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-serif: "Roboto Serif", Georgia, "Times New Roman", serif;
 
 $font-family-base: $font-family-serif;
@@ -9,15 +11,17 @@ $headings-font-family: $font-family-sans-serif;
 $headings-font-weight: bold;
 
 // Brand Colors
-$jet-black: #0D0D0D;
-$champagne-gold: #D4AF37;
-$platinum-silver: #E5E4E2;
+$jet-black: #0d0d0d;
+$champagne-gold: #d4af37;
+$platinum-silver: #e5e4e2;
+$white: #ffffff;
 
 $primary: $champagne-gold;
 $secondary: $platinum-silver;
-$dark: $jet-black;
-$light: $platinum-silver;
 
-$body-bg: $jet-black;
-$body-color: $platinum-silver;
-$headings-color: $primary;
+// Setup generic variables that bootstrap uses, but let CSS variables handle the mode switching
+// We'll set these to values that make sense for the SCSS compliation,
+// but the actual appearance will be driven by the [data-bs-theme] CSS variables we define.
+
+// Default to Dark Mode settings for SCSS variables if that's the preference,
+// or keep them neutral. Bootstrap 5.3 allows overriding CSS variables directly.

@@ -1,0 +1,38 @@
+[data-bs-theme="dark"] {
+  --bs-body-color: #{$platinum-silver};
+  --bs-body-bg: #{$jet-black};
+  --bs-heading-color: #{$champagne-gold};
+  --bs-link-color: #{$champagne-gold};
+  --bs-link-hover-color: lighten($champagne-gold, 10%);
+  
+  .navbar {
+    --bs-navbar-brand-color: #{$champagne-gold};
+    --bs-navbar-active-color: #{$champagne-gold};
+    --bs-navbar-color: #{$platinum-silver};
+    --bs-navbar-hover-color: #{$champagne-gold};
+  }
+
+  // Theme switcher icons
+  #bd-theme {
+    color: #{$champagne-gold};
+    
+    .theme-icon-active {
+      fill: currentColor;
+    }
+  }
+}
+
+[data-bs-theme="light"] {
+  --bs-body-color: #{$jet-black};
+  --bs-body-bg: #{$platinum-silver};
+  --bs-heading-color: #{$jet-black};
+  --bs-link-color: darken($champagne-gold, 15%);
+  --bs-link-hover-color: darken($champagne-gold, 5%);
+  
+  .navbar {
+    --bs-navbar-brand-color: #{$jet-black};
+    --bs-navbar-active-color: #{$jet-black};
+    --bs-navbar-color: rgba(#{$jet-black}, 0.75);
+    --bs-navbar-hover-color: #{$jet-black};
+  }
+}
