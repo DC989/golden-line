@@ -29,9 +29,7 @@
       integrity="{{ $css.Data.Integrity }}"
       crossorigin="anonymous"
     />
-    {{ end }}
-
-    {{ partial "font-faces.html" . }}
+    {{ end }} {{ partial "font-faces.html" . }}
 
     <!-- Prevent 404 page from being indexed -->
     {{ if eq .RelPermalink "/404.html" }}
@@ -39,9 +37,46 @@
     {{ end }}
   </head>
   <body>
-    {{ partial "theme-icons.html" . }}
-    {{ partial "header.html" . }}
+    {{ partial "theme-icons.html" . }} {{ partial "header.html" . }}
     <main>{{ block "main" . }}{{ end }}</main>
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+    </div>
     {{ partial "footer.html" . }}
 
     <!-- Bootstrap JS from node_modules via Hugo Pipes -->
@@ -54,10 +89,12 @@
     ></script>
     {{ end }}
     <!-- Theme Switcher Logic -->
-    {{ with resources.Get "js/theme-switcher.js" }}
-      {{ $js := . | minify | fingerprint }}
-      <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
-    {{ end }}
-    {{ block "scripts" . }}{{ end }}
+    {{ with resources.Get "js/theme-switcher.js" }} {{ $js := . | minify |
+    fingerprint }}
+    <script
+      src="{{ $js.RelPermalink }}"
+      integrity="{{ $js.Data.Integrity }}"
+    ></script>
+    {{ end }} {{ block "scripts" . }}{{ end }}
   </body>
 </html>
