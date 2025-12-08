@@ -1,0 +1,52 @@
+{{ $fonts := slice
+  (dict "family" "Montserrat"
+        "weight" "bold"
+        "style" "normal"
+        "base" "Montserrat-Bold")
+  (dict "family" "Montserrat"
+        "weight" "normal"
+        "style" "normal"
+        "base" "Montserrat-Regular")
+  (dict "family" "Montserrat"
+        "weight" "bold"
+        "style" "italic"
+        "base" "Montserrat-BoldItalic")
+  (dict "family" "Montserrat"
+        "weight" "normal"
+        "style" "italic"
+        "base" "Montserrat-Italic")
+  (dict "family" "Roboto Serif"
+        "weight" "bold"
+        "style" "italic"
+        "base" "RobotoSerif-BoldItalic")
+  (dict "family" "Roboto Serif"
+        "weight" "bold"
+        "style" "normal"
+        "base" "RobotoSerif-Bold")
+  (dict "family" "Roboto Serif"
+        "weight" "normal"
+        "style" "italic"
+        "base" "RobotoSerif-Italic")
+  (dict "family" "Roboto Serif"
+        "weight" "normal"
+        "style" "normal"
+        "base" "RobotoSerif-Regular")
+}}
+<style>
+{{ range $fonts }}
+  {{ $woff2 := resources.Get (printf "fonts/%s.woff2" .base) }}
+  {{ $woff := resources.Get (printf "fonts/%s.woff" .base) }}
+  {{ if and $woff2 $woff }}
+    {{ $woff2 = $woff2 | fingerprint }}
+    {{ $woff = $woff | fingerprint }}
+    @font-face {
+      font-family: "{{ .family }}";
+      src: url("{{ $woff2.RelPermalink }}") format("woff2"),
+           url("{{ $woff.RelPermalink }}") format("woff");
+      font-weight: {{ .weight }};
+      font-style: {{ .style }};
+      font-display: swap;
+    }
+  {{ end }}
+{{ end }}
+</style>

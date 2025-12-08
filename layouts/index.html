@@ -1,4 +1,28 @@
 {{ define "main" }}
+<section class="splash">
+  <div class="splash__video-wrapper">
+    <video
+      autoplay=""
+      muted=""
+      loop=""
+      playsinline=""
+      poster="/images/hero-home-page-poster-mobile.jpg"
+      class="splash__video"
+    >
+      <source src="/videos/hero-home.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <div class="splash__caption">
+    <h1>Апитерапија у служби здравља</h1>
+    <p>
+      Апитерапија је грана комплементарне и алтернативне медицине која користи
+      пчелиње производе, укључујући мед, полен, пчелињи хлеб, прополис, матични
+      млеч, пчелињи восак, пчелињи отров, звука, вибрација и ларве пчела.
+    </p>
+  </div>
+</section>
+
 <section class="hero">
   <h1>{{ .Title }}</h1>
   <p>{{ .Description }}</p>

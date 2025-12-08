@@ -15,7 +15,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
         <ul class="navbar-nav">
           {{ range .Site.Menus.main }}
           <li class="nav-item">
@@ -29,10 +29,10 @@
           </li>
           {{ end }}
         </ul>
+
+        <!-- Language Switcher -->
+        {{ partial "language-switcher.html" . }}
       </div>
     </div>
-
-    <!-- Language Switcher -->
-    {{ partial "language-switcher.html" . }}
   </nav>
 </header>

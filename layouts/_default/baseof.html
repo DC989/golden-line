@@ -31,6 +31,8 @@
     />
     {{ end }}
 
+    {{ partial "font-faces.html" . }}
+
     <!-- Prevent 404 page from being indexed -->
     {{ if eq .RelPermalink "/404.html" }}
     <meta name="robots" content="noindex, nofollow" />
