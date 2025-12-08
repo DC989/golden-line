@@ -1,1 +1,2 @@
 baseURL = "https://dc989.github.io/golden-line/"
+canonifyURLs = true
