@@ -1,4 +1,3 @@
-baseURL = "http://localhost:1313/"
 defaultContentLanguage = 'sr-latn'
 languageCode = 'sr-latn'
 title = 'Golden Line'
