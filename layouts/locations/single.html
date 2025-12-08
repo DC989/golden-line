@@ -1,0 +1,37 @@
+{{ define "main" }} {{ if .Params.banner_image }}
+<div class="location-banner">
+  <picture>
+    {{ if .Params.banner_image_mobile }}
+    <source
+      media="(max-width: 767.98px)"
+      srcset="{{ .Params.banner_image_mobile | relURL }}"
+    />
+    {{ end }}
+    <source
+      media="(min-width: 768px)"
+      srcset="{{ .Params.banner_image | relURL }}"
+    />
+    <img src="{{ .Params.banner_image | relURL }}" alt="{{ .Title }}" />
+  </picture>
+  <div
+    class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"
+  ></div>
+</div>
+{{ end }}
+
+<div class="container py-5">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+      <article class="location-page">
+        <header class="mb-4">
+          <h1 class="fw-bold mb-1">{{ .Title }}</h1>
+          <div class="text-muted fst-italic mb-2">{{ .Description }}</div>
+          <hr />
+        </header>
+
+        <div class="content">{{ .Content }}</div>
+      </article>
+    </div>
+  </div>
+</div>
+{{ end }}

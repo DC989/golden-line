@@ -14,32 +14,10 @@
   </div>
 
   <div class="splash__caption">
-    <h1>Апитерапија у служби здравља</h1>
-    <p>
-      Апитерапија је грана комплементарне и алтернативне медицине која користи
-      пчелиње производе, укључујући мед, полен, пчелињи хлеб, прополис, матични
-      млеч, пчелињи восак, пчелињи отров, звука, вибрација и ларве пчела.
-    </p>
-  </div>
-</section>
-
-<section class="hero">
-  <h1>{{ .Title }}</h1>
-  <p>{{ .Description }}</p>
-  <div class="content">{{ .Content }}</div>
-  <a href="/contact/" class="cta-button">{{ i18n "bookNow" }}</a>
-</section>
-
-<section class="services">
-  <h2>{{ .Title }}</h2>
-  <p>{{ .Description }}</p>
-  <div class="service-grid">
-    {{ range .Site.Menus.main }} {{ if ne .Identifier "contact" }}
-    <div class="service-card">
-      <h3>{{ .Name }}</h3>
-      <a href="{{ .URL }}">{{ i18n "readMore" }}</a>
-    </div>
-    {{ end }} {{ end }}
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
+    <div class="content">{{ .Content }}</div>
+    <a href="/contact/" class="cta-button">{{ i18n "bookNow" }}</a>
   </div>
 </section>
 {{ end }}
