@@ -6,10 +6,10 @@
       muted=""
       loop=""
       playsinline=""
-      poster="/images/hero-home-page-poster-mobile.jpg"
+      poster="{{ "images/hero-home-page-poster-mobile.jpg" | relURL }}"
       class="splash__video"
     >
-      <source src="/videos/hero-home.mp4" type="video/mp4" />
+      <source src="{{ "videos/hero-home.mp4" | relURL }}" type="video/mp4" />
     </video>
   </div>
 
@@ -17,7 +17,7 @@
     <h1>{{ .Title }}</h1>
     <p>{{ .Description }}</p>
     <div class="content">{{ .Content }}</div>
-    <a href="/contact/" class="cta-button">{{ i18n "bookNow" }}</a>
+    <a href="{{ "contact/" | relLangURL }}" class="cta-button">{{ i18n "bookNow" }}</a>
   </div>
 </section>
 {{ end }}
