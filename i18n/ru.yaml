@@ -9,7 +9,10 @@
   translation: "Все статьи"
 
 - id: bookNow
-  translation: "Забронировать"
+  translation: "Забронируйте сейчас"
+
+- id: callUs
+  translation: "Позвонить +381 66 504 0583"
 
 - id: getQuote
   translation: "Получить расчет"

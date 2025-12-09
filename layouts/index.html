@@ -17,7 +17,10 @@
     <h1>{{ .Title }}</h1>
     <p>{{ .Description }}</p>
     <div class="content">{{ .Content }}</div>
-    <a href="{{ "contact/" | relLangURL }}" class="cta-button">{{ i18n "bookNow" }}</a>
+    <div class="d-flex flex-column flex-md-row gap-3 mt-4">
+      <a href="{{ "contact/" | relLangURL }}" class="cta-button btn btn-primary">{{ i18n "bookNow" }}</a>
+      <a href="tel:+381665040583" class="cta-button btn btn-outline-light">{{ i18n "callUs" }}</a>
+    </div>
   </div>
 </section>
 {{ end }}

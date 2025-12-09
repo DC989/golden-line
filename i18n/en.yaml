@@ -11,6 +11,9 @@
 - id: bookNow
   translation: "Book Now"
 
+- id: callUs
+  translation: "Call +381 66 504 0583"
+
 - id: getQuote
   translation: "Get a Quote"
 

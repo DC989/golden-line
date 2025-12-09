@@ -4,7 +4,7 @@
   --bs-heading-color: #{$champagne-gold};
   --bs-link-color: #{$champagne-gold};
   --bs-link-hover-color: lighten($champagne-gold, 10%);
-  
+
   .navbar {
     --bs-navbar-brand-color: #{$champagne-gold};
     --bs-navbar-active-color: #{$champagne-gold};
@@ -15,9 +15,26 @@
   // Theme switcher icons
   #bd-theme {
     color: #{$champagne-gold};
-    
+
     .theme-icon-active {
       fill: currentColor;
+    }
+  }
+
+  // Splash Caption (Dark Theme)
+  .splash__caption {
+    background-color: #{$champagne-gold};
+    color: #{$jet-black};
+
+    // Override the desktop media query background if needed, or let it inherit opacity if desired.
+    // Assuming solid color based on request, or semi-transparent version of it.
+    @include breakpoint("md") {
+      background: rgba($champagne-gold, 0.85);
+    }
+
+    h1,
+    p {
+      color: #{$jet-black} !important;
     }
   }
 }
@@ -28,11 +45,26 @@
   --bs-heading-color: #{$jet-black};
   --bs-link-color: darken($champagne-gold, 15%);
   --bs-link-hover-color: darken($champagne-gold, 5%);
-  
+
   .navbar {
     --bs-navbar-brand-color: #{$jet-black};
     --bs-navbar-active-color: #{$jet-black};
     --bs-navbar-color: rgba(#{$jet-black}, 0.75);
     --bs-navbar-hover-color: #{$jet-black};
+  }
+
+  // Splash Caption (Light Theme)
+  .splash__caption {
+    background-color: #{$jet-black};
+    color: #{$platinum-silver};
+
+    @include breakpoint("md") {
+      background: rgba($jet-black, 0.85);
+    }
+
+    h1,
+    p {
+      color: #{$platinum-silver} !important;
+    }
   }
 }

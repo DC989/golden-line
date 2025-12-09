@@ -9,7 +9,10 @@
   translation: "Sve objave"
 
 - id: bookNow
-  translation: "Rezervišite sada"
+  translation: "Rezerviši Sada"
+
+- id: callUs
+  translation: "Pozovi +381 66 504 0583"
 
 - id: getQuote
   translation: "Zatražite ponudu"
