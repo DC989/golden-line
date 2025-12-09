@@ -1,6 +1,11 @@
 ---
 title: "Kontakt"
-description: "Kontaktirajte nas"
+type: "contact"
+description: "Kontaktirajte nas putem Viber-a, WhatsApp-a ili telefona"
+date: 2025-10-28
+contact:
+  sendMessage: "Pošalji Poruku"
+  phone: "Telefon"
 ---
 
-Kontaktirajte nas za sva pitanja i rezervacije.
+Za sve informacije i rezervacije, dostupni smo 24/7. Izaberite način kontakta koji vama najviše odgovara.

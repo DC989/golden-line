@@ -1,12 +1,11 @@
 ---
 title: "Contact Us"
-description: "Get in touch with Golden Line Transfers"
+type: "contact"
+description: "Get in touch via Viber, WhatsApp, or Phone"
 date: 2025-10-28
+contact:
+  sendMessage: "Send Message"
+  phone: "Phone"
 ---
 
-## Contact Information
-
-Get in touch for bookings and inquiries.
-
-**Phone:** +381 XX XXX XXXX
-**Email:** info@golden-line-transfers.com
+For all inquiries and bookings, we are available 24/7. Choose the contact method that suits you best.
