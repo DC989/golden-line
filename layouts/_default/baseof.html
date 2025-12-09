@@ -39,8 +39,9 @@
   <body>
     {{ partial "theme-icons.html" . }} {{ partial "header.html" . }}
     <main>{{ block "main" . }}{{ end }}</main>
-    <div class="contact-fixed">
+    <div class="contact-fixed slide-in-right">
       <a
+        class="contact-viber"
         style="background-color: #8f5db7"
         href="viber://chat?number=%2B381665040583"
       >
@@ -82,7 +83,11 @@
           </g>
         </svg>
       </a>
-      <a style="background-color: #25d366" href="https://wa.me/381665040583">
+      <a
+        class="contact-whats-app"
+        style="background-color: #25d366"
+        href="https://wa.me/381665040583"
+      >
         <svg
           viewBox="0 0 24.00 24.00"
           fill="none"
@@ -110,7 +115,11 @@
           </g>
         </svg>
       </a>
-      <a style="background-color: #0d0d0d" href="tel:+381665040583">
+      <a
+        class="contact-phone"
+        style="background-color: #0d0d0d"
+        href="tel:+381665040583"
+      >
         <svg
           viewBox="0 0 24 24"
           fill="none"
