@@ -16,7 +16,7 @@ Travel directly, safely, comfortably and stress-free from Belgrade to Kopaonik. 
 **Reservations:**
 
 - Phone / WhatsApp / Viber: **+381665040583**
-- Email: **goldenlinetransfers@gmail.com**
+- Email: **golden.line.team.transfers@gmail.com**
 
 ---
 
@@ -106,4 +106,4 @@ Secure your transportation in advance, especially during peak winter periods and
 **Contact for Reservations:**
 
 - Phone / WhatsApp / Viber: **+381665040583**
-- Email: **goldenlinetransfers@gmail.com**
+- Email: **golden.line.team.transfers@gmail.com**
