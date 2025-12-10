@@ -16,7 +16,6 @@ banner_image_mobile: "images/kopaonik-mobile.jpg"
 **Бронирование:**
 
 - Телефон / WhatsApp / Viber: **+381665040583**
-- Email: **golden.line.team.transfers@gmail.com**
 
 ---
 
@@ -106,4 +105,3 @@ banner_image_mobile: "images/kopaonik-mobile.jpg"
 **Контакт для бронирования:**
 
 - Телефон / WhatsApp / Viber: **+381665040583**
-- Email: **golden.line.team.transfers@gmail.com**

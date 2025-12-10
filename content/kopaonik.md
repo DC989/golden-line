@@ -16,7 +16,6 @@ Putujte direktno, sigurno, udobno i bez stresa od Beograda do Kopaonika. Bilo da
 **Rezervacije:**
 
 - Telefon / WhatsApp / Viber: **+381665040583**
-- Email: **golden.line.team.transfers@gmail.com**
 
 ---
 
@@ -106,4 +105,3 @@ Obezbedite svoj prevoz na vreme, posebno u periodu zimskih gužvi i školskih ra
 **Kontakt za rezervacije:**
 
 - Telefon / WhatsApp / Viber: **+381665040583**
-- Email: **golden.line.team.transfers@gmail.com**
