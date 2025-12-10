@@ -35,6 +35,21 @@
     {{ if eq .RelPermalink "/404.html" }}
     <meta name="robots" content="noindex, nofollow" />
     {{ end }}
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-17767594682"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-17767594682");
+    </script>
   </head>
   <body>
     {{ partial "theme-icons.html" . }} {{ partial "header.html" . }}
