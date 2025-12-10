@@ -44,3 +44,6 @@
 
 - id: browseServices
   translation: "Просмотреть наши услуги"
+
+- id: allRightsReserved
+  translation: "Все права защищены."

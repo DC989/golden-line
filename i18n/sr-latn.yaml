@@ -44,3 +44,6 @@
 
 - id: browseServices
   translation: "Pregledajte naše usluge"
+
+- id: allRightsReserved
+  translation: "Sva prava zadržana."

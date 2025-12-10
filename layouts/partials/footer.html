@@ -1,9 +1,12 @@
-<footer>
+<footer class="footer py-4 mt-auto bg-body-tertiary">
   <div class="container">
-    <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
-    <p>
-      {{ i18n "phoneLabel" }}: +381 XX XXX XXXX | {{ i18n "emailLabel" }}:
-      info@golden-line-transfers.com
-    </p>
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-6 text-center">
+        <p class="mb-0">
+          &copy; {{ now.Year }} {{ .Site.Title }}. {{ i18n "allRightsReserved"
+          }}
+        </p>
+      </div>
+    </div>
   </div>
 </footer>

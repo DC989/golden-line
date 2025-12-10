@@ -16,7 +16,7 @@ title = 'Golden Line'
     languageName = "Русский"
     languageCode = "ru"
     weight = 2
-    title = "Golden Line Трансферы"
+    title = "Golden Line Transfers"
     [languages.ru.params]
       description = "Премиум трансферы из аэропорта и индивидуальные перевозки"
 
@@ -24,7 +24,7 @@ title = 'Golden Line'
     languageName = "Srpski"
     languageCode = "sr-latn"
     weight = 1
-    title = "Golden Line Transferi"
+    title = "Golden Line Transfers"
     [languages.sr-latn.params]
       description = "Premium aerodromski i individualni transferi"
 
