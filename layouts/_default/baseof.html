@@ -57,6 +57,23 @@
 
       gtag("config", "AW-17767594682");
     </script>
+
+    <!-- Event snippet for Contact (1) conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-17767594682/zBdCCNyR7c8bELr1n5hC",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
   </head>
   <body>
     {{ partial "theme-icons.html" . }} {{ partial "header.html" . }}
@@ -232,5 +249,11 @@
       integrity="{{ $js.Data.Integrity }}"
     ></script>
     {{ end }} {{ block "scripts" . }}{{ end }}
+    {{ with resources.Get "js/custom.js" }} {{ $js := . | minify | fingerprint }}
+    <script
+      src="{{ $js.RelPermalink }}"
+      integrity="{{ $js.Data.Integrity }}"
+    ></script>
+    {{ end }}
   </body>
 </html>
