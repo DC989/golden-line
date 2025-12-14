@@ -12,6 +12,12 @@
   weight = 1
 
 [[main]]
+  identifier = "craiova"
+  name = "Advent Krajova"
+  url = "/craiova/"
+  weight = 2
+
+[[main]]
   identifier = "about"
   name = "O Nama"
   url = "/about/"

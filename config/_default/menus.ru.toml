@@ -12,6 +12,12 @@
   weight = 1
 
 [[main]]
+  identifier = "craiova"
+  name = "Адвент Крайова"
+  url = "/ru/craiova/"
+  weight = 2
+
+[[main]]
   identifier = "about"
   name = "О нас"
   url = "/ru/about/"
