@@ -47,3 +47,60 @@
 
 - id: allRightsReserved
   translation: "Sva prava zadržana."
+
+- id: heroTitle
+  translation: "Vaše putovanje, naš prioritet."
+
+- id: heroSubtitle
+  translation: "Iskusite neuporediv komfor i tačnost uz premium usluge transfera Golden Line. Direktne rute do vaše destinacije, sa profesionalnim vozačima."
+
+- id: heroCTA
+  translation: "Rezervišite transfer"
+
+- id: featureSafetyTitle
+  translation: "Bezbednost na prvom mestu"
+- id: featureSafetyDesc
+  translation: "Profesionalno održavana vozila i iskusni, licencirani vozači garantuju vašu potpunu sigurnost."
+
+- id: featurePunctualityTitle
+  translation: "Uvek na vreme"
+- id: featurePunctualityDesc
+  translation: "Ponosimo se tačnošću. Praćenje letova i proaktivno planiranje znače da smo tu kada smo vam potrebni."
+
+- id: featureComfortTitle
+  translation: "Premium komfor"
+- id: featureComfortDesc
+  translation: "Putujte u modernim, čistim i prostranim vozilima opremljenim za opuštajuće i udobno putovanje."
+
+- id: testimonialQuote
+  translation: "\"Najbolje iskustvo prevoza koje sam imala u regionu. Vozač je bio profesionalan, vozilo besprekorno, a stigli smo pre vremena. Topla preporuka.\""
+- id: testimonialAuthor
+  translation: "Ana Petrović"
+- id: testimonialTitle
+  translation: "Poslovni putnik"
+
+- id: routesTitle
+  translation: "Popularne Rute"
+- id: routesSubtitle
+  translation: "Direktni transferi do ključnih destinacija."
+- id: routeLjubljanaTitle
+  translation: "Beograd <i class=\"bi bi-arrow-left-right\"></i> Ljubljana"
+- id: routeLjubljanaDesc
+  translation: "Premium transfer do prestonice Slovenije. Brza i udobna usluga od vrata do vrata."
+- id: routeMariborTitle
+  translation: "Beograd <i class=\"bi bi-arrow-left-right\"></i> Maribor"
+- id: routeMariborDesc
+  translation: "Efikasan šatl do drugog po veličini grada u Sloveniji. Idealno za poslovna i turistička putovanja."
+- id: routeRijekaTitle
+  translation: "Beograd <i class=\"bi bi-arrow-left-right\"></i> Rijeka"
+- id: routeRijekaDesc
+  translation: "Vaša direktna veza sa kapijom Jadrana. Pouzdan prevoz za vaš odmor na obali."
+- id: viewDetails
+  translation: "Detaljnije"
+
+- id: southernCalloutTitle
+  translation: "Putujete sa juga Srbije?"
+- id: southernCalloutDesc
+  translation: "Nudimo vam **direktne polaske** iz Niša, Vranja, Leskovca i drugih gradova. Izbegnite put do Beograda i uštedite vreme uz našu jedinstvenu uslugu."
+- id: southernCalloutCTA
+  translation: "Pogledaj polaske"

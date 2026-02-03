@@ -47,3 +47,60 @@
 
 - id: allRightsReserved
   translation: "All rights reserved."
+
+- id: heroTitle
+  translation: "Your Journey, Our Priority."
+
+- id: heroSubtitle
+  translation: "Experience unparalleled comfort and punctuality with Golden Line's premium transfer services. Direct routes to your destination, operated by professional drivers."
+
+- id: heroCTA
+  translation: "Book a Transfer"
+
+- id: featureSafetyTitle
+  translation: "Safety First"
+- id: featureSafetyDesc
+  translation: "Professionally maintained fleet and experienced, licensed drivers ensure your complete safety."
+
+- id: featurePunctualityTitle
+  translation: "Always On Time"
+- id: featurePunctualityDesc
+  translation: "We pride ourselves on punctuality. Flight monitoring and proactive scheduling mean we're there when you need us."
+
+- id: featureComfortTitle
+  translation: "Premium Comfort"
+- id: featureComfortDesc
+  translation: "Travel in modern, clean, and spacious vehicles equipped for a relaxing and comfortable journey."
+
+- id: testimonialQuote
+  translation: "\"The best transfer experience I've had in the region. The driver was professional, the vehicle was immaculate, and we arrived ahead of schedule. Highly recommended.\""
+- id: testimonialAuthor
+  translation: "Ana Petrović"
+- id: testimonialTitle
+  translation: "Business Traveler"
+
+- id: routesTitle
+  translation: "Popular Routes"
+- id: routesSubtitle
+  translation: "Direct transfers to key destinations."
+- id: routeLjubljanaTitle
+  translation: "Belgrade <i class=\"bi bi-arrow-left-right\"></i> Ljubljana"
+- id: routeLjubljanaDesc
+  translation: "Premium transfer to the capital of Slovenia. Fast and comfortable door-to-door service."
+- id: routeMariborTitle
+  translation: "Belgrade <i class=\"bi bi-arrow-left-right\"></i> Maribor"
+- id: routeMariborDesc
+  translation: "Efficient shuttle to Slovenia's second-largest city. Ideal for both business and leisure."
+- id: routeRijekaTitle
+  translation: "Belgrade <i class=\"bi bi-arrow-left-right\"></i> Rijeka"
+- id: routeRijekaDesc
+  translation: "Your direct link to the gateway of the Adriatic. Reliable transport for your coastal escape."
+- id: viewDetails
+  translation: "View Details"
+
+- id: southernCalloutTitle
+  translation: "Travelling from Southern Serbia?"
+- id: southernCalloutDesc
+  translation: "We offer **direct departures** from Niš, Vranje, Leskovac, and other cities. Save time by bypassing Belgrade with our unique service."
+- id: southernCalloutCTA
+  translation: "View Departures"

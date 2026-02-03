@@ -1,0 +1,87 @@
+{{ define "main" }}
+
+<section class="py-5 bg-dark text-white">
+  <div class="container text-center py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h1 class="display-3 fw-bold mb-3 text-uppercase" style="letter-spacing: 2px;">{{ .Title }}</h1>
+        <p class="lead mb-4" style="color: var(--gl-accent);">{{ .Description }}</p>
+        <div class="mx-auto" style="width: 60px; height: 4px; background-color: var(--gl-accent);"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container py-5">
+  <div class="row">
+    <div class="col-lg-10 mx-auto">
+      
+      {{ if .Content }}
+      <div class="content-section mb-5 p-4 text-white border-start border-5 border-primary shadow-sm" style="background-color: var(--gl-surface);">
+        {{ .Content }}
+      </div>
+      {{ end }}
+
+      {{/* LOGIC: IF WE ARE AT THE TOP LEVEL SECTION PAGE */}}
+      {{ if or (eq .Type "southern-shuttles") (not .Parent) }}
+      
+      <div class="row g-4 mb-5">
+        <div class="col-12">
+          <h2 class="h4 text-uppercase fw-bold mb-4 border-bottom pb-2">
+            <i class="bi bi-geo-fill me-2 text-primary"></i>Izaberite mesto polaska
+          </h2>
+        </div>
+        
+        {{ range .Sections.ByTitle }}
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm transition-hover bg-dark text-white">
+            <div class="card-body p-4 d-flex align-items-center">
+              <div class="flex-shrink-0 me-3">
+                <div class="rounded-circle bg-primary text-black d-flex align-items-center justify-content-center shadow" style="width: 50px; height: 50px;">
+                  <i class="bi bi-arrow-up-right-circle fs-4"></i>
+                </div>
+              </div>
+              <div>
+                <h5 class="card-title fw-bold mb-1">{{ .Title }}</h5>
+                <p class="card-text small opacity-75 mb-0">Direktni polasci za HR i SLO</p>
+                <a href="{{ .Permalink }}" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+      {{ end }}
+
+      {{/* IF WE ARE ON A CITY HUB PAGE, SHOW OTHER HUBS AT BOTTOM */}}
+      {{ if and .Parent (eq .Parent.Type "southern-shuttles") }}
+      
+      <div class="mt-5 pt-5 border-top">
+        <h4 class="h5 text-muted mb-4 text-uppercase">Ostali polasci sa juga Srbije:</h4>
+        <div class="d-flex flex-wrap gap-2">
+          {{ range .Parent.Sections }}
+            {{ if ne .Permalink $.Permalink }}
+            <a href="{{ .Permalink }}" class="btn btn-sm btn-outline-dark rounded-pill px-3">{{ .Title }}</a>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      
+      {{ end }}
+
+    </div>
+  </div>
+</div>
+
+<style>
+.transition-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.transition-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+</style>
+
+{{ end }}

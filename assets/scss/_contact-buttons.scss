@@ -1,0 +1,56 @@
+/* =================================================================
+   FLOATING CONTACT DOCK
+   ================================================================= */
+
+.contact-fixed {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gl-surface);
+  border: 1px solid var(--gl-border);
+  border-right: none;
+  border-radius: 0.5rem 0 0 0.5rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  z-index: 1000;
+
+  a {
+    padding: 0.75rem;
+    display: block;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+
+    svg {
+      width: 28px; /* Slightly smaller for a sleeker look */
+      height: 28px;
+      fill: var(--gl-text);
+      transition: fill 0.2s ease, transform 0.2s ease;
+    }
+
+    &:hover {
+      background-color: rgba(190, 161, 95, 0.1);
+      
+      svg {
+        fill: var(--gl-accent);
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+/* Original Animation - Remains Unchanged */
+.slide-in-right {
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translate(100%, -50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, -50%);
+    opacity: 1;
+  }
+}

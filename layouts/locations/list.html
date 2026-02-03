@@ -1,0 +1,58 @@
+{{ define "main" }} {{/* HERO SECTION FOR THE COUNTRY */}}
+<section class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 text-center">
+      <h1 class="display-4">{{ .Title }}</h1>
+      <p class="lead text-muted">{{ .Description }}</p>
+      <div class="content mt-4">{{ .Content }}</div>
+    </div>
+  </div>
+</section>
+
+{{/* GRID OF CITIES/LOCATIONS WITHIN THE COUNTRY */}}
+<section class="container pb-5">
+  <div class="row">
+    {{/* Get all pages in this section (e.g., all cities in Istria) */}} {{
+    $pages := .Pages }} {{ range $pages.ByTitle }}
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card h-100 shadow-sm bg-dark text-white border-secondary">
+        {{ with .Params.price }}
+        <span class="position-absolute top-0 end-0 bg-primary text-black py-1 px-3 m-2 rounded-pill fw-bold" style="z-index: 2; box-shadow: 0 2px 10px rgba(0,0,0,0.5);">{{ . }}</span>
+        {{ end }}        {{ $img := "" }}
+        {{ $raw_url := "" }}
+
+        {{ if .Params.banner_image_mobile }}
+          {{ $img = resources.Get .Params.banner_image_mobile }}
+          {{ $raw_url = .Params.banner_image_mobile }}
+        {{ end }}
+        
+        {{ if not $img }}
+          {{ with .Params.banner_image }}
+            {{ $img = resources.Get . }}
+            {{ if not $raw_url }}
+              {{ $raw_url = . }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{ if $img }}
+          {{ $resized := $img.Fill "400x250" }}
+          <img src="{{ $resized.RelPermalink }}" class="card-img-top" alt="{{ .Title }}">
+        {{ else if $raw_url }}
+           <!-- Fallback: Image resource not found, using raw URL -->
+          <img src="{{ $raw_url | relURL }}" class="card-img-top" alt="{{ .Title }}" style="height: 250px; object-fit: cover;">
+        {{ end }}
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">{{ .Title }}</h5>
+          <p class="card-text text-muted flex-grow-1">{{ .Description }}</p>
+          <a href="{{ .Permalink }}" class="btn btn-primary mt-auto"
+            >View Details</a
+          >
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}

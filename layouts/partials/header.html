@@ -13,7 +13,7 @@
               data-bs-display="static"
               aria-label="Toggle theme (auto)">
         <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-        <span class="d-none ms-2" id="bd-theme-text">Toggle theme</span>
+        <span class="visually-hidden ms-2" id="bd-theme-text">Toggle theme</span>
       </button>
       <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
         <li>
@@ -62,7 +62,7 @@
           {{ range .Site.Menus.main }}
             {{ if .HasChildren }}
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle{{ if $.IsMenuCurrent "main" . }} active{{ end }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle{{ if $.IsMenuCurrent "main" . }} active{{ end }}" href="{{ .URL }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   {{ .Name }}
                 </a>
                 <ul class="dropdown-menu">

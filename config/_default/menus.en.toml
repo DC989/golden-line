@@ -1,30 +1,258 @@
 [[main]]
+  identifier = "slovenia"
+  name = "Slovenia"
+  url = "/en/slovenia/"
+  weight = 1
+
+[[main]]
+  identifier = "bled"
+  name = "Bled"
+  url = "/en/slovenia/bled/"
+  parent = "slovenia"
+  weight = 1
+
+[[main]]
+  identifier = "celje"
+  name = "Celje"
+  url = "/en/slovenia/celje/"
+  parent = "slovenia"
+  weight = 2
+
+[[main]]
+  identifier = "izola"
+  name = "Izola"
+  url = "/en/slovenia/izola/"
+  parent = "slovenia"
+  weight = 3
+
+[[main]]
+  identifier = "koper"
+  name = "Koper"
+  url = "/en/slovenia/koper/"
+  parent = "slovenia"
+  weight = 4
+
+[[main]]
+  identifier = "kranj"
+  name = "Kranj"
+  url = "/en/slovenia/kranj/"
+  parent = "slovenia"
+  weight = 5
+
+[[main]]
+  identifier = "kranjska-gora"
+  name = "Kranjska Gora"
+  url = "/en/slovenia/kranjska-gora/"
+  parent = "slovenia"
+  weight = 6
+
+[[main]]
+  identifier = "ljubljana"
+  name = "Ljubljana"
+  url = "/en/slovenia/ljubljana/"
+  parent = "slovenia"
+  weight = 7
+
+[[main]]
+  identifier = "maribor"
+  name = "Maribor"
+  url = "/en/slovenia/maribor/"
+  parent = "slovenia"
+  weight = 8
+
+[[main]]
+  identifier = "novo-mesto"
+  name = "Novo Mesto"
+  url = "/en/slovenia/novo-mesto/"
+  parent = "slovenia"
+  weight = 9
+
+[[main]]
+  identifier = "piran"
+  name = "Piran"
+  url = "/en/slovenia/piran/"
+  parent = "slovenia"
+  weight = 10
+
+[[main]]
+  identifier = "portoroz"
+  name = "Portoroz"
+  url = "/en/slovenia/portoroz/"
+  parent = "slovenia"
+  weight = 11
+
+[[main]]
+  identifier = "ptuj"
+  name = "Ptuj"
+  url = "/en/slovenia/ptuj/"
+  parent = "slovenia"
+  weight = 12
+
+[[main]]
+  identifier = "velenje"
+  name = "Velenje"
+  url = "/en/slovenia/velenje/"
+  parent = "slovenia"
+  weight = 13
+
+[[main]]
+  identifier = "croatia"
+  name = "Croatia"
+  url = "/en/croatia/"
+  weight = 2
+
+[[main]]
+  identifier = "karlovac"
+  name = "Karlovac"
+  url = "/en/croatia/karlovac/"
+  parent = "croatia"
+  weight = 1
+
+[[main]]
+  identifier = "novigrad"
+  name = "Novigrad"
+  url = "/en/croatia/novigrad/"
+  parent = "croatia"
+  weight = 2
+
+[[main]]
+  identifier = "opatija"
+  name = "Opatija"
+  url = "/en/croatia/opatija/"
+  parent = "croatia"
+  weight = 3
+
+[[main]]
+  identifier = "porec"
+  name = "Porec"
+  url = "/en/croatia/porec/"
+  parent = "croatia"
+  weight = 4
+
+[[main]]
+  identifier = "pula"
+  name = "Pula"
+  url = "/en/croatia/pula/"
+  parent = "croatia"
+  weight = 5
+
+[[main]]
+  identifier = "rijeka"
+  name = "Rijeka"
+  url = "/en/croatia/rijeka/"
+  parent = "croatia"
+  weight = 6
+
+[[main]]
+  identifier = "rovinj"
+  name = "Rovinj"
+  url = "/en/croatia/rovinj/"
+  parent = "croatia"
+  weight = 7
+
+[[main]]
+  identifier = "umag"
+  name = "Umag"
+  url = "/en/croatia/umag/"
+  parent = "croatia"
+  weight = 8
+
+[[main]]
+  identifier = "varazdin"
+  name = "Varaždin"
+  url = "/en/croatia/varazdin/"
+  parent = "croatia"
+  weight = 9
+
+[[main]]
+  identifier = "zagreb"
+  name = "Zagreb"
+  url = "/en/croatia/zagreb/"
+  parent = "croatia"
+  weight = 10
+
+[[main]]
   identifier = "serbia"
   name = "Serbia"
-  url = "#"
-  weight = 1
+  url = "/en/serbia/"
+  weight = 3
 
 [[main]]
   identifier = "kopaonik"
   name = "Kopaonik"
-  url = "/en/kopaonik/"
+  url = "/en/serbia/kopaonik/"
   parent = "serbia"
   weight = 1
+
+[[main]]
+  identifier = "southern-shuttles"
+  name = "Southern Shuttles"
+  url = "/en/southern-shuttles/"
+  weight = 4
+
+[[main]]
+  identifier = "cuprija"
+  name = "Cuprija"
+  url = "/en/southern-shuttles/cuprija/"
+  parent = "southern-shuttles"
+  weight = 1
+
+[[main]]
+  identifier = "jagodina"
+  name = "Jagodina"
+  url = "/en/southern-shuttles/jagodina/"
+  parent = "southern-shuttles"
+  weight = 2
+
+[[main]]
+  identifier = "krusevac"
+  name = "Krusevac"
+  url = "/en/southern-shuttles/krusevac/"
+  parent = "southern-shuttles"
+  weight = 3
+
+[[main]]
+  identifier = "leskovac"
+  name = "Leskovac"
+  url = "/en/southern-shuttles/leskovac/"
+  parent = "southern-shuttles"
+  weight = 4
+
+[[main]]
+  identifier = "nis"
+  name = "Nis"
+  url = "/en/southern-shuttles/nis/"
+  parent = "southern-shuttles"
+  weight = 5
+
+[[main]]
+  identifier = "paracin"
+  name = "Paracin"
+  url = "/en/southern-shuttles/paracin/"
+  parent = "southern-shuttles"
+  weight = 6
+
+[[main]]
+  identifier = "vranje"
+  name = "Vranje"
+  url = "/en/southern-shuttles/vranje/"
+  parent = "southern-shuttles"
+  weight = 7
 
 [[main]]
   identifier = "craiova"
   name = "Advent Craiova"
   url = "/en/craiova/"
-  weight = 2
+  weight = 5
 
 [[main]]
   identifier = "about"
   name = "About"
   url = "/en/about/"
-  weight = 2
+  weight = 6
 
 [[main]]
   identifier = "contact"
   name = "Contact"
   url = "/en/contact/"
-  weight = 3
+  weight = 7

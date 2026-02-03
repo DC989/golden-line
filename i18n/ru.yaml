@@ -47,3 +47,60 @@
 
 - id: allRightsReserved
   translation: "Все права защищены."
+
+- id: heroTitle
+  translation: "Ваше путешествие — наш приоритет."
+
+- id: heroSubtitle
+  translation: "Оцените непревзойденный комфорт и пунктуальность премиальных трансферных услуг Golden Line. Прямые маршруты до вашего пункта назначения с профессиональными водителями."
+
+- id: heroCTA
+  translation: "Заказать трансфер"
+
+- id: featureSafetyTitle
+  translation: "Безопасность прежде всего"
+- id: featureSafetyDesc
+  translation: "Профессионально обслуживаемый автопарк и опытные лицензированные водители гарантируют вашу полную безопасность."
+
+- id: featurePunctualityTitle
+  translation: "Всегда вовремя"
+- id: featurePunctualityDesc
+  translation: "Мы гордимся своей пунктуальностью. Отслеживание рейсов и проактивное планирование означают, что мы будем там, когда мы вам понадобимся."
+
+- id: featureComfortTitle
+  translation: "Премиум комфорт"
+- id: featureComfortDesc
+  translation: "Путешествуйте в современных, чистых и просторных автомобилях, оборудованных для расслабляющей и комфортной поездки."
+
+- id: testimonialQuote
+  translation: "\"Лучший опыт трансфера в регионе. Водитель был профессионален, автомобиль безупречен, и мы прибыли раньше расписания. Очень рекомендую.\""
+- id: testimonialAuthor
+  translation: "Ана Петрович"
+- id: testimonialTitle
+  translation: "Деловой путешественник"
+
+- id: routesTitle
+  translation: "Популярные маршруты"
+- id: routesSubtitle
+  translation: "Прямые трансферы в ключевые пункты назначения."
+- id: routeLjubljanaTitle
+  translation: "Белград <i class=\"bi bi-arrow-left-right\"></i> Любляна"
+- id: routeLjubljanaDesc
+  translation: "Премиум-трансфер в столицу Словении. Быстрое и комфортное обслуживание от двери до двери."
+- id: routeMariborTitle
+  translation: "Белград <i class=\"bi bi-arrow-left-right\"></i> Марибор"
+- id: routeMariborDesc
+  translation: "Эффективный шаттл во второй по величине город Словении. Идеально подходит как для бизнеса, так и для отдыха."
+- id: routeRijekaTitle
+  translation: "Белград <i class=\"bi bi-arrow-left-right\"></i> Риека"
+- id: routeRijekaDesc
+  translation: "Ваша прямая связь с воротами Адриатики. Надежный транспорт для вашего отдыха на побережье."
+- id: viewDetails
+  translation: "Подробнее"
+
+- id: southernCalloutTitle
+  translation: "Путешествуете с юга Сербии?"
+- id: southernCalloutDesc
+  translation: "Мы предлагаем **прямые отправления** из Ниша, Вранья, Лесковаца и других городов. Экономьте время, минуя Белград, с нашей уникальной услугой."
+- id: southernCalloutCTA
+  translation: "Посмотреть рейсы"

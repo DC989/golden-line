@@ -4,6 +4,7 @@ type: "locations"
 description: "Luksuzni prevoz do Kopaonika - zimskog centra Srbije."
 banner_image: "images/kopaonik.jpg"
 banner_image_mobile: "images/kopaonik-mobile.jpg"
+price: "3600 RSD"
 ---
 
 Putujte direktno, sigurno, udobno i bez stresa od Beograda do Kopaonika. Bilo da idete na skijanje, poslovni put ili odmor u prirodi, obezbeđujemo pouzdan prevoz od vrata do vrata.
@@ -66,10 +67,10 @@ Nudimo više opcija vozila prilagođenih veličini vaše grupe i količini prtlj
 
 Cene su iste za sve tipove vozila – birate vozilo prema veličini grupe i potrebnom prostoru.
 
-| Tip usluge     | Cena (po vozilu) |
-| :------------- | :--------------- |
-| Jedan smer     | 3600 RSD         |
-| Povratna karta | 6600 RSD         |
+| Tip usluge     | Cena (po osobi) |
+| :------------- | :-------------- |
+| Jedan smer     | 3600 RSD        |
+| Povratna karta | 6600 RSD        |
 
 ---
 

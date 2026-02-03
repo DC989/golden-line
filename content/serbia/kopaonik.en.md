@@ -4,6 +4,7 @@ type: "locations"
 description: "Luxury transfers to Kopaonik - Serbia's premier winter resort."
 banner_image: "images/kopaonik.jpg"
 banner_image_mobile: "images/kopaonik-mobile.jpg"
+price: "3600 RSD"
 ---
 
 Travel directly, safely, comfortably and stress-free from Belgrade to Kopaonik. Whether you're going skiing, on a business trip or enjoying a nature retreat, we provide reliable door-to-door transportation.

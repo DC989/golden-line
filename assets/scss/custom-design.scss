@@ -1,0 +1,240 @@
+/* =================================================================
+   1. FONT & COLOR DEFINITIONS
+   ================================================================= */
+
+/* Import Fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&family=Rajdhani:wght@500;700&display=swap");
+
+:root {
+  --gl-bg: #111111;
+  --gl-surface: #1a1a1a;
+  --gl-accent: #bea15f;
+  --gl-text: #f5f5f5;
+  --gl-text-muted: #888888;
+  --gl-border: rgba(190, 161, 95, 0.25);
+
+  --bs-body-color: var(--gl-text);
+  --bs-body-bg: var(--gl-bg);
+  --bs-border-color: var(--gl-border);
+}
+
+/* =================================================================
+   2. TYPOGRAPHY & BASE STYLES
+   ================================================================= */
+
+body {
+  font-family: "Chivo", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.text-accent {
+  color: var(--gl-accent);
+}
+
+.text-muted {
+  color: var(--gl-text-muted) !important;
+}
+
+/* =================================================================
+   3. HERO SECTION & BOOKING WIDGET
+   ================================================================= */
+
+.hero-section {
+  background: radial-gradient(ellipse at 50% -20%, #333, var(--gl-bg) 80%);
+  padding: 10rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section .display-3 {
+  font-weight: 700;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.booking-widget {
+  background-color: var(--gl-surface);
+  border: 1px solid var(--gl-border);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 10;
+  transform: perspective(1000px) rotateY(-5deg) translateX(2%);
+}
+
+@media (max-width: 992px) {
+  .booking-widget {
+    transform: none;
+    margin-top: 3rem;
+  }
+}
+
+.booking-widget .form-control,
+.booking-widget .form-select {
+  background-color: var(--gl-bg);
+  border-color: var(--gl-border);
+  color: var(--gl-text);
+  border-radius: 0.25rem;
+}
+
+.booking-widget .form-control:focus,
+.booking-widget .form-select:focus {
+  background-color: var(--gl-bg);
+  border-color: var(--gl-accent);
+  color: var(--gl-text);
+  box-shadow: 0 0 0 0.25rem rgba(190, 161, 95, 0.25);
+}
+
+/* =================================================================
+   4. BUTTONS & MICRO-INTERACTIONS
+   ================================================================= */
+
+.btn-primary {
+  --bs-btn-bg: var(--gl-accent);
+  --bs-btn-border-color: var(--gl-accent);
+  --bs-btn-hover-bg: #d4b87a;
+  --bs-btn-hover-border-color: #d4b87a;
+  --bs-btn-active-bg: #a88d4c;
+  --bs-btn-active-border-color: #a88d4c;
+  --bs-btn-color: #000;
+  --bs-btn-hover-color: #000;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  transition:
+    transform 0.2s ease-out,
+    box-shadow 0.2s ease-out;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(190, 161, 95, 0.2);
+}
+
+/* =================================================================
+   5. FEATURE & ROUTE CARDS
+   ================================================================= */
+
+.feature-card,
+.route-card {
+  background-color: transparent;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+  border: none;
+}
+
+.feature-card:hover,
+.route-card:hover {
+  transform: translateY(-5px);
+}
+
+.route-card {
+  background-color: var(--gl-surface);
+  border: 1px solid var(--gl-border);
+  border-radius: 0.5rem;
+}
+
+.route-card:hover {
+  border-color: var(--gl-accent);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: var(--gl-accent);
+}
+
+/* =================================================================
+   6. TESTIMONIAL & ANIMATIONS
+   ================================================================= */
+
+.testimonial-strip {
+  border-top: 1px solid var(--gl-border);
+  border-bottom: 1px solid var(--gl-border);
+}
+
+.blockquote-footer {
+  color: var(--gl-text-muted);
+}
+
+/* Page Load Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.hero-section .display-3 {
+  animation-delay: 0.2s;
+}
+.hero-section .lead {
+  animation-delay: 0.4s;
+}
+.hero-section .btn {
+  animation-delay: 0.6s;
+}
+.hero-section .booking-widget {
+  animation-delay: 0.8s;
+}
+
+/* =================================================================
+   7. NAVIGATION HOVER DROPDOWN (Desktop)
+   ================================================================= */
+
+@media (min-width: 992px) {
+  // Bootstrap LG breakpoint
+  .navbar .nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition:
+      opacity 0.2s ease-in-out,
+      transform 0.2s ease-in-out;
+    pointer-events: auto;
+  }
+
+  /* Initially hide the dropdown and prepare for animation */
+  .navbar .nav-item.dropdown .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition:
+      opacity 0.2s ease-in-out,
+      transform 0.2s ease-in-out,
+      visibility 0.2s;
+  }
+}

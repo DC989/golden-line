@@ -52,6 +52,11 @@ title = 'Golden Line'
     source = "static"
     target = "static"
 
+  # Mount static images as assets for processing
+  [[module.mounts]]
+    source = "static/images"
+    target = "assets/images"
+
   # Mount content directory
   [[module.mounts]]
     source = "content"
