@@ -20,7 +20,7 @@ Ove zime vas vodimo na putovanje iz bajke! Krajova, grad u Rumuniji, poslednjih 
 
 ## O destinaciji: Advent 2025
 
-Božićni market u Krajovi redovno se rangira među **najlepše u Evropi** (prema izboru *European Best Destinations*). Očekuje vas:
+Božićni market u Krajovi redovno se rangira među **najlepše u Evropi** (prema izboru _European Best Destinations_). Očekuje vas:
 
 - **Milioni svetiljki:** Grad je okićen jedinstvenim svetlosnim instalacijama koje svake godine imaju drugu temu (npr. Snežna kraljica, Alisa u zemlji čuda).
 - **Klizalište i koncerti:** Zabava za celu porodicu na glavnom trgu Mihai Viteazul.
@@ -54,7 +54,6 @@ Putovanje u inostranstvo zimi može biti naporno. Mi taj napor pretvaramo u uži
 
 Bilo da idete na romantični vikend ili porodični izlet, imamo pravo vozilo za vas.
 
-- **Premium limuzina (do 3 putnika):** Za maksimalnu udobnost i privatnost.
 - **Minivan (do 6 putnika):** Idealno za porodice.
 - **Van (do 8 putnika):** Za veće grupe prijatelja koji žele da putuju zajedno.
 

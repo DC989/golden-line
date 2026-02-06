@@ -20,7 +20,7 @@ This winter, we are taking you on a fairytale journey! Craiova, Romania, has bec
 
 ## About the Destination: Advent 2025
 
-The Craiova Christmas Market is regularly ranked among the **most beautiful in Europe** (by *European Best Destinations*). What awaits you:
+The Craiova Christmas Market is regularly ranked among the **most beautiful in Europe** (by _European Best Destinations_). What awaits you:
 
 - **Millions of Lights:** The city is adorned with unique light installations that feature a different theme every year (e.g., The Snow Queen, Alice in Wonderland).
 - **Ice Rink & Concerts:** Entertainment for the whole family in Mihai Viteazul Square.
@@ -54,7 +54,6 @@ Traveling abroad in winter can be exhausting. We turn that effort into enjoyment
 
 Whether you are going on a romantic weekend or a family trip, we have the right vehicle for you.
 
-- **Premium Sedan (up to 3 passengers):** For maximum comfort and privacy.
 - **Minivan (up to 6 passengers):** Ideal for families.
 - **Van (up to 8 passengers):** For larger groups of friends traveling together.
 
