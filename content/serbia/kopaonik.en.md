@@ -86,7 +86,7 @@ For any changes, simply contact us by phone, message, WhatsApp or Viber.
 ## Frequently Asked Questions (FAQ)
 
 **Is the price per person or per vehicle?**
-The price is per vehicle, not per person.
+The price is per person.
 
 **Do you offer child seats?**
 Upon request, we provide child seats; simply mention your child's age when making your reservation.
