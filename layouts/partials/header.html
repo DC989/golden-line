@@ -46,6 +46,28 @@
       <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">Golden Line Transfers</a>
 
       <button
+        class="search-trigger d-none d-lg-flex me-3"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#searchModal"
+        aria-label="Search"
+      >
+        <i class="bi bi-search"></i>
+        <span>{{ i18n "searchPlaceholder" }}</span>
+        <kbd>/</kbd>
+      </button>
+
+      <button
+        class="search-trigger d-lg-none me-2"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#searchModal"
+        aria-label="Search"
+      >
+        <i class="bi bi-search"></i>
+      </button>
+
+      <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"

@@ -164,3 +164,13 @@
 - id: blogWrittenBy
   translation: "Autor:"
 
+# Search
+- id: searchTitle
+  translation: "Pretraga"
+
+- id: searchPlaceholder
+  translation: "Pretražite..."
+
+- id: searchNoResults
+  translation: "Nema rezultata za '%s'"
+
