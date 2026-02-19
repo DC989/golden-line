@@ -1,0 +1,279 @@
+/* =================================================================
+   AIRPORT SHUTTLES — Editorial Aviation Design
+   ================================================================= */
+
+/* --- Hero Section --- */
+.as-hero {
+  background: linear-gradient(
+    180deg,
+    rgba($champagne-gold, 0.08) 0%,
+    transparent 60%
+  ),
+  radial-gradient(ellipse at 50% -20%, #333, var(--gl-bg) 80%);
+  padding: 8rem 0 5rem;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      repeating-linear-gradient(
+        90deg,
+        rgba($champagne-gold, 0.03) 0px,
+        rgba($champagne-gold, 0.03) 1px,
+        transparent 1px,
+        transparent 80px
+      );
+    pointer-events: none;
+  }
+}
+
+.as-hero__icon {
+  font-size: 3rem;
+  color: $champagne-gold;
+  opacity: 0.6;
+  animation: as-float 3s ease-in-out infinite;
+}
+
+@keyframes as-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.as-hero__divider {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, $champagne-gold, transparent);
+}
+
+/* --- Content Block --- */
+.as-content-block {
+  background-color: var(--gl-surface);
+  border-left: 4px solid $champagne-gold;
+  padding: 2rem;
+  color: var(--gl-text);
+
+  h3, h4 {
+    color: $champagne-gold;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      padding: 0.4rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+
+      &::before {
+        content: "›";
+        position: absolute;
+        left: 0;
+        color: $champagne-gold;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
+/* --- Airport Cards --- */
+.as-airport-card {
+  display: flex;
+  align-items: stretch;
+  background-color: var(--gl-surface);
+  border: 1px solid var(--gl-border);
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: $champagne-gold;
+    box-shadow: 0 8px 24px rgba($champagne-gold, 0.1);
+  }
+}
+
+.as-airport-card__code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba($champagne-gold, 0.15), rgba($champagne-gold, 0.05));
+  border-right: 1px solid var(--gl-border);
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: $champagne-gold;
+}
+
+.as-airport-card__body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* --- How It Works Timeline --- */
+.as-how-it-works {
+  .row {
+    position: relative;
+  }
+}
+
+.as-step {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  position: relative;
+
+  // Connector line between steps (desktop only)
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 60%;
+    transform: translateY(-50%);
+    background: linear-gradient(180deg, transparent, var(--gl-border), transparent);
+  }
+
+  .col-md-4:last-child & {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.as-step__number {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: $champagne-gold;
+  opacity: 0.2;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.as-step__icon {
+  font-size: 1.8rem;
+  color: $champagne-gold;
+  margin-bottom: 1rem;
+}
+
+/* --- Pricing Callout --- */
+.as-pricing-callout {
+  background-color: var(--gl-surface);
+  border: 1px solid var(--gl-border);
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: $champagne-gold;
+  }
+}
+
+.as-pricing-callout__price {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: $champagne-gold;
+  line-height: 1;
+}
+
+.as-pricing-callout__currency {
+  font-size: 1.8rem;
+  vertical-align: super;
+  opacity: 0.7;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 767.98px) {
+  .as-hero {
+    padding: 5rem 0 3rem;
+  }
+
+  .as-airport-card {
+    flex-direction: column;
+  }
+
+  .as-airport-card__code {
+    min-width: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--gl-border);
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .as-step::after {
+    display: none;
+  }
+
+  .as-pricing-callout__price {
+    font-size: 2.5rem;
+  }
+}
+
+/* --- Light theme adjustments --- */
+[data-bs-theme="light"] {
+  .as-hero {
+    background: linear-gradient(
+      180deg,
+      rgba($champagne-gold, 0.1) 0%,
+      transparent 60%
+    ),
+    radial-gradient(ellipse at 50% -20%, #f0f0f0, var(--bs-body-bg) 80%);
+  }
+
+  .as-content-block {
+    background-color: #f8f8f6;
+    color: var(--bs-body-color);
+  }
+
+  .as-airport-card {
+    background-color: #fff;
+    border-color: #e0ddd5;
+
+    &:hover {
+      border-color: darken($champagne-gold, 10%);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  .as-airport-card__code {
+    background: linear-gradient(135deg, rgba($champagne-gold, 0.12), rgba($champagne-gold, 0.04));
+    border-right-color: #e0ddd5;
+    color: darken($champagne-gold, 15%);
+  }
+
+  .as-pricing-callout {
+    background-color: #f8f8f6;
+    border-color: #e0ddd5;
+  }
+
+  .as-pricing-callout__price {
+    color: darken($champagne-gold, 15%);
+  }
+
+  .as-step__number {
+    color: darken($champagne-gold, 15%);
+  }
+
+  .as-step__icon {
+    color: darken($champagne-gold, 10%);
+  }
+}

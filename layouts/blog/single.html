@@ -1,0 +1,141 @@
+{{ define "main" }}
+  <!-- POST HERO -->
+  <section class="blog-single-hero">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          {{/* Category Badge */}}
+          {{ with .Params.categories }}
+            <div class="mb-3">
+              {{ range first 1 . }}
+                <span class="blog-card__tag">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+
+          <h1 class="display-4 fw-bold text-uppercase mb-4">{{ .Title }}</h1>
+
+          {{/* Meta Row */}}
+          <div class="blog-single-hero__meta d-flex flex-wrap justify-content-center gap-4 mb-3">
+            {{ if .Date }}
+              <span class="d-flex align-items-center gap-1">
+                <i class="bi bi-calendar3"></i>
+                {{ i18n "blogPublishedOn" }} <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+              </span>
+            {{ end }}
+            <span class="d-flex align-items-center gap-1">
+              <i class="bi bi-clock"></i>
+              {{ .ReadingTime }} {{ i18n "blogMinRead" }}
+            </span>
+            <span class="d-flex align-items-center gap-1">
+              <i class="bi bi-person"></i>
+              {{ i18n "blogWrittenBy" }} Golden Line Team
+            </span>
+          </div>
+
+          <div class="blog-hero__divider mx-auto mt-3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED IMAGE -->
+  {{ if .Params.featured_image }}
+    {{ $img := resources.Get .Params.featured_image }}
+    {{ if $img }}
+      {{ $resized := $img.Fill "1200x500 webp" }}
+      <div class="container mt-n3 mb-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <img src="{{ $resized.RelPermalink }}" alt="{{ .Title }}" class="blog-single__featured-img w-100 rounded">
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
+
+  <!-- ARTICLE BODY -->
+  <article class="blog-single py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="blog-single__content">
+            {{ .Content }}
+          </div>
+
+          {{/* Tags */}}
+          {{ with .Params.categories }}
+            <div class="blog-single__tags mt-5 pt-4 border-top border-secondary">
+              <div class="d-flex flex-wrap gap-2 align-items-center">
+                <i class="bi bi-tags opacity-50"></i>
+                {{ range . }}
+                  <span class="blog-card__tag">{{ . }}</span>
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
+
+          {{/* Back to blog */}}
+          <div class="mt-5">
+            <a href="{{ "/blog/" | relLangURL }}" class="btn btn-outline-light btn-sm d-inline-flex align-items-center gap-2">
+              <i class="bi bi-arrow-left"></i>
+              {{ i18n "blogBackToAll" }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- RELATED POSTS -->
+  {{ $related := where (where site.RegularPages "Section" "blog") ".Permalink" "ne" .Permalink }}
+  {{ $related = $related | first 3 }}
+  {{ if $related }}
+    <section class="blog-related py-5">
+      <div class="container">
+        <h2 class="h4 fw-bold text-uppercase text-center mb-4" style="color: var(--gl-accent);">
+          {{ i18n "blogRelatedPosts" }}
+        </h2>
+        <div class="row g-4 justify-content-center">
+          {{ range $related }}
+            <div class="col-md-6 col-lg-4">
+              <article class="blog-card h-100 d-flex flex-column">
+                {{ if .Params.featured_image }}
+                  <div class="blog-card__image">
+                    {{ $img := resources.Get .Params.featured_image }}
+                    {{ if $img }}
+                      {{ $resized := $img.Fill "720x400 webp" }}
+                      <img src="{{ $resized.RelPermalink }}" alt="{{ .Title }}" class="w-100" loading="lazy">
+                    {{ end }}
+                  </div>
+                {{ else }}
+                  <div class="blog-card__image blog-card__image--placeholder">
+                    <i class="bi bi-journal-text"></i>
+                  </div>
+                {{ end }}
+                <div class="blog-card__body d-flex flex-column flex-grow-1">
+                  {{ with .Params.categories }}
+                    <div class="mb-2">
+                      {{ range first 1 . }}
+                        <span class="blog-card__tag">{{ . }}</span>
+                      {{ end }}
+                    </div>
+                  {{ end }}
+                  <h3 class="blog-card__title h6 fw-bold mb-2">
+                    <a href="{{ .Permalink }}" class="stretched-link">{{ .Title }}</a>
+                  </h3>
+                  <div class="blog-card__meta mt-auto d-flex align-items-center gap-3">
+                    <span class="d-flex align-items-center gap-1">
+                      <i class="bi bi-calendar3"></i>
+                      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}

@@ -104,3 +104,63 @@
   translation: "Nudimo vam **direktne polaske** iz Niša, Vranja, Leskovca i drugih gradova. Izbegnite put do Beograda i uštedite vreme uz našu jedinstvenu uslugu."
 - id: southernCalloutCTA
   translation: "Pogledaj polaske"
+
+# Airport Shuttles
+- id: airportSelectAirport
+  translation: "Izaberite aerodrom"
+
+- id: airportHowItWorks
+  translation: "Kako funkcioniše"
+
+- id: airportStep1Title
+  translation: "Rezervišite prevoz"
+- id: airportStep1Desc
+  translation: "Pošaljite nam detalje leta — broj leta, datum i vreme."
+
+- id: airportStep2Title
+  translation: "Pratimo vaš let"
+- id: airportStep2Desc
+  translation: "Pratimo vaš let u realnom vremenu i prilagođavamo se kašnjenjima."
+
+- id: airportStep3Title
+  translation: "Susret na aerodromu"
+- id: airportStep3Desc
+  translation: "Naš vozač vas čeka na izlazu iz terminala sa natpisom vašeg imena."
+
+- id: airportPerKm
+  translation: "po kilometru"
+
+- id: airportPricingTitle
+  translation: "Transparentna cena po kilometru"
+- id: airportPricingDesc
+  translation: "Bez skrivenih troškova, bez povećanja cene. Plaćate fiksnu cenu od 1,50€ za svaki kilometar putovanja. Cena se obračunava po stvarnoj udaljenosti od aerodroma do vaše destinacije."
+
+- id: airportOtherAirports
+  translation: "Ostali aerodromi"
+
+- id: airportCalloutTitle
+  translation: "Potreban vam je aerodromski transfer?"
+- id: airportCalloutDesc
+  translation: "Nudimo profesionalni šatl servis sa aerodroma **Beograd Nikola Tesla** i **Niš Konstantin Veliki**. Fiksna cena od 1,50€/km, dostupnost 24/7, praćenje leta u realnom vremenu."
+- id: airportCalloutCTA
+  translation: "Aerodromski šatl"
+
+# Blog
+- id: blogMinRead
+  translation: "min čitanja"
+
+- id: blogNoPosts
+  translation: "Još nema objava. Pratite nas!"
+
+- id: blogBackToAll
+  translation: "Sve objave"
+
+- id: blogRelatedPosts
+  translation: "Možda vas zanima"
+
+- id: blogPublishedOn
+  translation: ""
+
+- id: blogWrittenBy
+  translation: "Autor:"
+

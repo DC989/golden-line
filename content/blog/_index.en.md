@@ -1,6 +1,4 @@
 ---
 title: "Blog"
-description: "Latest news and updates"
+description: "Latest news, travel tips, and destination guides"
 ---
-
-Read our latest articles about transfer services and travel tips.

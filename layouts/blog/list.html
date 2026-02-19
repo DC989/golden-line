@@ -1,0 +1,85 @@
+{{ define "main" }}
+  <!-- BLOG HERO -->
+  <section class="blog-hero">
+    <div class="container text-center">
+      <i class="bi bi-journal-richtext blog-hero__icon d-block mb-3"></i>
+      <h1 class="display-3 fw-bold text-uppercase mb-3">{{ .Title }}</h1>
+      <p class="lead opacity-75 mb-0">{{ .Description }}</p>
+      <div class="blog-hero__divider mx-auto mt-4"></div>
+    </div>
+  </section>
+
+  <!-- BLOG POST GRID -->
+  <section class="py-5">
+    <div class="container">
+      {{ if .Pages }}
+        <div class="row g-4">
+          {{ range .Pages.ByDate.Reverse }}
+            <div class="col-md-6 col-lg-4">
+              <article class="blog-card h-100 d-flex flex-column">
+                {{/* Featured Image */}}
+                {{ if .Params.featured_image }}
+                  <div class="blog-card__image">
+                    {{ $img := resources.Get .Params.featured_image }}
+                    {{ if $img }}
+                      {{ $resized := $img.Fill "720x400 webp" }}
+                      <img src="{{ $resized.RelPermalink }}" alt="{{ .Title }}" class="w-100" loading="lazy">
+                    {{ end }}
+                  </div>
+                {{ else }}
+                  <div class="blog-card__image blog-card__image--placeholder">
+                    <i class="bi bi-journal-text"></i>
+                  </div>
+                {{ end }}
+
+                <div class="blog-card__body d-flex flex-column flex-grow-1">
+                  {{/* Category Badge */}}
+                  {{ with .Params.categories }}
+                    <div class="mb-2">
+                      {{ range first 1 . }}
+                        <span class="blog-card__tag">{{ . }}</span>
+                      {{ end }}
+                    </div>
+                  {{ end }}
+
+                  {{/* Title */}}
+                  <h3 class="blog-card__title h5 fw-bold mb-2">
+                    <a href="{{ .Permalink }}" class="stretched-link">{{ .Title }}</a>
+                  </h3>
+
+                  {{/* Excerpt */}}
+                  {{ with .Description }}
+                    <p class="blog-card__excerpt small opacity-75 mb-3">{{ . }}</p>
+                  {{ else }}
+                    <p class="blog-card__excerpt small opacity-75 mb-3">{{ .Summary | plainify | truncate 120 }}</p>
+                  {{ end }}
+
+                  {{/* Meta: Date + Reading Time */}}
+                  <div class="blog-card__meta mt-auto d-flex align-items-center gap-3">
+                    {{ if .Date }}
+                      <span class="d-flex align-items-center gap-1">
+                        <i class="bi bi-calendar3"></i>
+                        <time datetime="{{ .Date.Format "2006-01-02" }}">
+                          {{ .Date.Format "Jan 2, 2006" }}
+                        </time>
+                      </span>
+                    {{ end }}
+                    <span class="d-flex align-items-center gap-1">
+                      <i class="bi bi-clock"></i>
+                      {{ .ReadingTime }} {{ i18n "blogMinRead" }}
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          {{ end }}
+        </div>
+      {{ else }}
+        <div class="text-center py-5">
+          <i class="bi bi-journal-x display-1 opacity-25 mb-3 d-block"></i>
+          <p class="lead opacity-50">{{ i18n "blogNoPosts" }}</p>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

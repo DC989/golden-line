@@ -240,19 +240,45 @@
   weight = 7
 
 [[main]]
+  identifier = "airport-shuttles"
+  name = "Аэропорт шаттл"
+  url = "/ru/airport-shuttles/"
+  weight = 5
+
+[[main]]
+  identifier = "belgrade-nikola-tesla"
+  name = "Белград (BEG)"
+  url = "/ru/airport-shuttles/belgrade-nikola-tesla/"
+  parent = "airport-shuttles"
+  weight = 1
+
+[[main]]
+  identifier = "nis-constantine-the-great"
+  name = "Ниш (INI)"
+  url = "/ru/airport-shuttles/nis-constantine-the-great/"
+  parent = "airport-shuttles"
+  weight = 2
+
+[[main]]
   identifier = "craiova"
   name = "Адвент Крайова"
   url = "/ru/craiova/"
-  weight = 5
+  weight = 6
+
+[[main]]
+  identifier = "blog"
+  name = "Блог"
+  url = "/ru/blog/"
+  weight = 7
 
 [[main]]
   identifier = "about"
   name = "О нас"
   url = "/ru/about/"
-  weight = 6
+  weight = 8
 
 [[main]]
   identifier = "contact"
   name = "Контакты"
   url = "/ru/contact/"
-  weight = 7
+  weight = 9

@@ -104,3 +104,64 @@
   translation: "Мы предлагаем **прямые отправления** из Ниша, Вранья, Лесковаца и других городов. Экономьте время, минуя Белград, с нашей уникальной услугой."
 - id: southernCalloutCTA
   translation: "Посмотреть рейсы"
+
+# Airport Shuttles
+- id: airportSelectAirport
+  translation: "Выберите аэропорт"
+
+- id: airportHowItWorks
+  translation: "Как это работает"
+
+- id: airportStep1Title
+  translation: "Забронируйте поездку"
+- id: airportStep1Desc
+  translation: "Сообщите нам данные рейса — номер, дату и время."
+
+- id: airportStep2Title
+  translation: "Мы отслеживаем рейс"
+- id: airportStep2Desc
+  translation: "Мониторим ваш рейс в реальном времени и учитываем задержки."
+
+- id: airportStep3Title
+  translation: "Встреча в аэропорту"
+- id: airportStep3Desc
+  translation: "Водитель ждет вас на выходе из терминала с табличкой."
+
+- id: airportPerKm
+  translation: "за километр"
+
+- id: airportPricingTitle
+  translation: "Прозрачная цена за километр"
+- id: airportPricingDesc
+  translation: "Без скрытых расходов, без повышения цен. Вы платите фиксированную ставку 1,50€ за каждый километр поездки. Стоимость рассчитывается по фактическому расстоянию от аэропорта до пункта назначения."
+
+- id: airportOtherAirports
+  translation: "Другие аэропорты"
+
+- id: airportCalloutTitle
+  translation: "Нужен трансфер из аэропорта?"
+- id: airportCalloutDesc
+  translation: "Мы предлагаем профессиональный шаттл из аэропортов **Белград Никола Тесла** и **Ниш Константин Великий**. Фиксированная ставка 1,50€/км, доступность 24/7, отслеживание рейса."
+- id: airportCalloutCTA
+  translation: "Шаттл из аэропорта"
+
+# Blog
+- id: blogMinRead
+  translation: "мин чтения"
+
+- id: blogNoPosts
+  translation: "Пока нет публикаций. Следите за обновлениями!"
+
+- id: blogBackToAll
+  translation: "Все статьи"
+
+- id: blogRelatedPosts
+  translation: "Вам также может понравиться"
+
+- id: blogPublishedOn
+  translation: ""
+
+- id: blogWrittenBy
+  translation: "Автор:"
+
+

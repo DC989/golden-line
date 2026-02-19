@@ -104,3 +104,64 @@
   translation: "We offer **direct departures** from Niš, Vranje, Leskovac, and other cities. Save time by bypassing Belgrade with our unique service."
 - id: southernCalloutCTA
   translation: "View Departures"
+
+# Airport Shuttles
+- id: airportSelectAirport
+  translation: "Choose Your Airport"
+
+- id: airportHowItWorks
+  translation: "How It Works"
+
+- id: airportStep1Title
+  translation: "Book Your Ride"
+- id: airportStep1Desc
+  translation: "Send us your flight details — flight number, date, and time."
+
+- id: airportStep2Title
+  translation: "We Track Your Flight"
+- id: airportStep2Desc
+  translation: "We monitor your flight in real time and adjust for any delays."
+
+- id: airportStep3Title
+  translation: "Meet & Greet"
+- id: airportStep3Desc
+  translation: "Our driver meets you at the terminal exit with your name sign."
+
+- id: airportPerKm
+  translation: "per kilometer"
+
+- id: airportPricingTitle
+  translation: "Transparent Per-Kilometer Pricing"
+- id: airportPricingDesc
+  translation: "No surge pricing, no hidden fees. You pay a fixed rate of €1.50 for every kilometer of your journey. The fare is calculated based on the actual distance from the airport to your destination."
+
+- id: airportOtherAirports
+  translation: "Other Airports We Serve"
+
+- id: airportCalloutTitle
+  translation: "Need an Airport Transfer?"
+- id: airportCalloutDesc
+  translation: "We offer professional shuttle services from **Belgrade Nikola Tesla** and **Niš Constantine the Great** airports. Fixed rate of €1.50/km, 24/7 availability, real-time flight tracking."
+- id: airportCalloutCTA
+  translation: "Airport Shuttles"
+
+# Blog
+- id: blogMinRead
+  translation: "min read"
+
+- id: blogNoPosts
+  translation: "No posts yet. Check back soon!"
+
+- id: blogBackToAll
+  translation: "All Posts"
+
+- id: blogRelatedPosts
+  translation: "You May Also Like"
+
+- id: blogPublishedOn
+  translation: ""
+
+- id: blogWrittenBy
+  translation: "By"
+
+

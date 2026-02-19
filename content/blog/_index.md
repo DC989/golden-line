@@ -1,6 +1,4 @@
 ---
 title: "Blog"
-description: "Naš blog"
+description: "Najnovije vesti, saveti za putovanje i vodiči za destinacije"
 ---
-
-Dobrodošli na naš blog.

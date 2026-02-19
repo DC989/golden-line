@@ -240,19 +240,45 @@
   weight = 7
 
 [[main]]
+  identifier = "airport-shuttles"
+  name = "Aerodromski šatl"
+  url = "/airport-shuttles/"
+  weight = 5
+
+[[main]]
+  identifier = "belgrade-nikola-tesla"
+  name = "Beograd (BEG)"
+  url = "/airport-shuttles/belgrade-nikola-tesla/"
+  parent = "airport-shuttles"
+  weight = 1
+
+[[main]]
+  identifier = "nis-constantine-the-great"
+  name = "Niš (INI)"
+  url = "/airport-shuttles/nis-constantine-the-great/"
+  parent = "airport-shuttles"
+  weight = 2
+
+[[main]]
   identifier = "craiova"
   name = "Advent Krajova"
   url = "/craiova/"
-  weight = 5
+  weight = 6
+
+[[main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog/"
+  weight = 7
 
 [[main]]
   identifier = "about"
   name = "O Nama"
   url = "/about/"
-  weight = 6
+  weight = 8
 
 [[main]]
   identifier = "contact"
   name = "Kontakt"
   url = "/contact/"
-  weight = 7
+  weight = 9
