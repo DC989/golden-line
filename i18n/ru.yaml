@@ -164,4 +164,14 @@
 - id: blogWrittenBy
   translation: "Автор:"
 
+# Search
+- id: searchTitle
+  translation: "Поиск"
+
+- id: searchPlaceholder
+  translation: "Искать..."
+
+- id: searchNoResults
+  translation: "Ничего не найдено по запросу '%s'"
+
 

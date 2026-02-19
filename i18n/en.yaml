@@ -164,4 +164,14 @@
 - id: blogWrittenBy
   translation: "By"
 
+# Search
+- id: searchTitle
+  translation: "Search"
+
+- id: searchPlaceholder
+  translation: "Search..."
+
+- id: searchNoResults
+  translation: "No results found for '%s'"
+
 
